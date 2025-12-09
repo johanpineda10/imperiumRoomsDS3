@@ -1,0 +1,26 @@
+{
+  "name": "Save",
+  "request": {
+    "type": "http",
+    "url": "http://localhost:8080/api/users",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [],
+    "headers": [],
+    "body": "{\n  \"userName\": \"Juan Pérez\",\n  \"email\": \"juan@example.com\",\n  \"age\": 30,\n  \"phone\": \"3001234567\"\n}\n",
+    "bodyContainer": {
+      "form": [],
+      "text": "{\n  \"userName\": \"Juan Pérez\",\n  \"email\": \"juan@example.com\",\n  \"age\": 30,\n  \"phone\": \"3001234567\"\n}\n",
+      "multipartForm": []
+    },
+    "contentType": "application/json",
+    "auth": {
+      "authConfigStore": {},
+      "currentAuthType": "INHERIT"
+    },
+    "pathVariables": []
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Get All",
+  "request": {
+    "type": "http",
+    "url": "http://localhost:8080/api/users",
+    "scripts": {
+      "postResponse": "",
+      "preRequest": ""
+    },
+    "method": "GET",
+    "queryParams": [],
+    "headers": [],
+    "body": null,
+    "contentType": "text/plain",
+    "auth": {
+      "authConfigStore": {},
+      "currentAuthType": "INHERIT"
+    },
+    "pathVariables": []
+  }
+}
