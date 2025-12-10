@@ -5,7 +5,7 @@ import jakarta.validation.constraints.NotBlank;
 import lombok.*;
 
 import java.time.LocalDate;
-
+//ENTIDAD DE RESERVACIONES
 @Entity
 @Getter
 @Setter
