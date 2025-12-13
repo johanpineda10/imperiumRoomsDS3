@@ -5,6 +5,8 @@ import jakarta.validation.constraints.NotBlank;
 import lombok.*;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
+
 //ENTIDAD DE RESERVACIONES
 @Entity
 @Getter
@@ -22,17 +24,17 @@ public class Reservation {
     @Column(nullable = false)
     private String description;
 
-    @NotBlank(message = "StartDate is requested")
+
     @Column(nullable = false)
     private LocalDate startDate;
 
-    @NotBlank(message = "EndEDate is requested")
+
     @Column(nullable = false)
     private LocalDate endDate;
 
-    @NotBlank(message = "CreatedAt is requested")
-    @Column(nullable = false)
-    private LocalDate createdAt;
+
+    @Column(nullable = false, updatable = false)
+    private LocalDateTime createdAt;
 
     @ManyToOne
     @JoinColumn(name = "userId")
@@ -41,4 +43,9 @@ public class Reservation {
     @ManyToOne
     @JoinColumn(name = "roomId")
     private Rooms room;
+
+    @PrePersist
+    public void prePersist() {
+        this.createdAt = LocalDateTime.now();
+    }
 }
