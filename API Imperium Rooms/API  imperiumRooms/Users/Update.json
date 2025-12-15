@@ -1,0 +1,26 @@
+{
+  "name": "Update",
+  "request": {
+    "type": "http",
+    "url": "http://localhost:8080/api/users/1",
+    "scripts": {
+      "postResponse": "",
+      "preRequest": ""
+    },
+    "method": "PUT",
+    "queryParams": [],
+    "headers": [],
+    "body": "{\n  \"userName\": \"Juan Actualizado\",\n  \"email\": \"juan.actualizado@example.com\",\n  \"age\": 31,\n  \"phone\": \"3007654321\"\n}\n",
+    "bodyContainer": {
+      "text": "{\n  \"userName\": \"Juan Actualizado\",\n  \"email\": \"juan.actualizado@example.com\",\n  \"age\": 31,\n  \"phone\": \"3007654321\"\n}\n",
+      "multipartForm": [],
+      "form": []
+    },
+    "contentType": "application/json",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    },
+    "pathVariables": []
+  }
+}
